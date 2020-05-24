@@ -1,0 +1,56 @@
+<!-- HTML -->
+<header>
+    <title>Custom Combat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+</header>
+<body>
+    <div>
+        <h1>CUSTOM COMBAT</h1>
+        <h3> The custom fighting expierience</h3>
+        <h5>
+            Design your own abilities from scratch and prove their strength on the global ranked ladder
+        </h5>
+        <button onclick="signin()">Login</button>
+    </div>
+</body>
+
+<!-- Style -->
+<style>
+    body{
+        font-family: 'Source Code Pro', monospace;
+        background: #41434c;
+        text-align: center;
+        color : white;
+    }
+    h1 {
+        position: relative;
+        width: 100%;
+        margin-top: 10%;
+        font-size: 70;
+        letter-spacing: 10;
+    }
+    button {
+        color : white;
+        width: 300px;
+        height: 50px;
+        border: 1px solid #de3030;
+        border-radius: 5;
+        background-color: #2c2e33;
+        cursor: pointer;
+    }
+    button:hover{ 
+        background-color: #1c1517;
+    }
+
+
+</style>
+
+<!-- Scripts -->
+<script>
+
+    function signin () {
+        location.href = 'https://open-combat-userpooldomain.auth.us-east-1.amazoncognito.com/login?client_id=7nab8dm1lgc7hprd1cjv8fpc3q&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://play.custom-combat.com/'
+    }
+
+
+</script>
